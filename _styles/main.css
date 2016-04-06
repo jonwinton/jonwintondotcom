@@ -1,7 +1,9 @@
 @import 'base/reset';
 @import 'base/elements';
-.test {
-    color: green;
-}
+
+@import 'landmarks/header/header';
+@import 'landmarks/header/nav';
+@import 'landmarks/header/title';
+
 
 @import "syntax-highlighting";

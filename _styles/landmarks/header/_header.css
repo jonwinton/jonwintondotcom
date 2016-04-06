@@ -1,0 +1,18 @@
+.header {
+    border-top: 6px solid map(colors, primary, dark);
+    border-bottom: 1px solid map(colors, divider);
+    background-color: map(colors, primary, color);
+    padding: 20px 30px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-wrapper-title-link {
+    color: map(colors, primary, text);
+}

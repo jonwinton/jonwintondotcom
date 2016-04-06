@@ -1,7 +1,7 @@
 module.exports = {
     rootValue: 16,
     unitPrecision: 5,
-    propWhiteList: ['font', 'font-size', 'line-height', 'letter-spacing'],
+    propWhiteList: [],
     selectorBlackList: ['body'],
     replace: true,
     mediaQuery: false,
