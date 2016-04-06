@@ -1,0 +1,10 @@
+.title {
+    @map fonts headline;
+    @map typography alpha;
+}
+
+.title-sub {
+    display: block;
+    text-align: right;
+    @map typography milli;
+}

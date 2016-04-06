@@ -1,4 +1,7 @@
 .header {
+    border-top: 6px solid map(colors, primary, dark);
+    border-bottom: 1px solid map(colors, divider);
+    background-color: map(colors, primary, color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,6 +9,5 @@
 }
 
 .header-title-link {
-    @map fonts headline;
-    @map typography alpha;
+    color: map(colors, primary, text);
 }

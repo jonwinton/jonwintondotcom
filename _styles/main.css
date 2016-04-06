@@ -2,6 +2,8 @@
 @import 'base/elements';
 
 @import 'landmarks/header/header';
+@import 'landmarks/header/nav';
+@import 'landmarks/header/title';
 
 
 @import "syntax-highlighting";
