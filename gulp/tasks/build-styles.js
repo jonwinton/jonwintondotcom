@@ -22,10 +22,7 @@ var opts = {
     maps: configVariables
 };
 
-console.log(opts);
 function buildStyles() {
-
-
     var processors = [
         precss,
         map(opts),
