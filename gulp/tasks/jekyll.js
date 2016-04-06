@@ -6,6 +6,7 @@ var notify       = require('gulp-notify');
 var gutil        = require('gulp-util');
 var cp           = require('child_process');
 var path         = require('path');
+var runSequence = require('run-sequence');
 
 
 
@@ -22,17 +23,28 @@ gulp.task('jekyll-build', function (done) {
         .on('close', done);
 });
 
+gulp.task('refresh', function() {
+    browserSync.reload();
+});
+
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build', 'styles'], function () {
-    browserSync.reload();
+gulp.task('jekyll-rebuild', function (cb) {
+
+
+    return runSequence(
+        ['jekyll-build'],
+        ['styles'],
+        ['refresh'],
+        cb
+    );
 });
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['jekyll-build', 'styles'], function() {
+gulp.task('browser-sync', ['jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -41,4 +53,4 @@ gulp.task('browser-sync', ['jekyll-build', 'styles'], function() {
 });
 
 
-module.exports = gulp.task('jekyll', ['browser-sync', 'watch']);
+module.exports = gulp.task('jekyll', ['browser-sync', 'watchJekyll']);

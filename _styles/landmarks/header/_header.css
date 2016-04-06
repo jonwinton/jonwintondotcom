@@ -1,8 +1,7 @@
 .header {
-    border-top: 6px solid map(colors, primary, dark);
-    border-bottom: 1px solid map(colors, divider);
-    background-color: map(colors, primary, color);
-    padding: 20px 30px;
+    background-color: rgba(255,255,255, 1);
+    padding: 5px 30px;
+    border-bottom: 1px solid map(colors, accent);
 }
 
 .header-wrapper {
@@ -14,5 +13,5 @@
 }
 
 .header-wrapper-title-link {
-    color: map(colors, primary, text);
+    color: map(colors, text, primary);
 }

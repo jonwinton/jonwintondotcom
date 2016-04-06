@@ -1,6 +1,6 @@
 .title {
     @map fonts headline;
-    @map typography alpha;
+    @map typography gamma;
 }
 
 .title-sub {

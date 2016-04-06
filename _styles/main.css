@@ -5,8 +5,11 @@
 @import 'landmarks/header/header';
 @import 'landmarks/header/nav';
 @import 'landmarks/header/title';
+@import 'landmarks/main/main';
+@import 'landmarks/footer/footer';
 
 /* Layout */
+@import 'modules/layout/section/section';
 @import 'modules/layout/wrapper/wrapper';
 
 @import "syntax-highlighting";
