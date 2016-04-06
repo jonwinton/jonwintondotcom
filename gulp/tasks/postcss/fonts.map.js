@@ -1,12 +1,12 @@
 module.exports = {
     fonts: {
-        regular: {
-            'font-family': 'Arial, sans-serif',
+        headline: {
+            'font-family': '\'Lato\', sans-serif',
             'font-weight': 'normal'
         },
-        bold: {
-            'font-family': 'Arial, sans-serif',
-            'font-weight': 'bold'
+        regular: {
+            'font-family': '\'Merriweather\', serif',
+            'font-weight': 'normal'
         }
     }
 };
