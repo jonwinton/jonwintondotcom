@@ -6,5 +6,6 @@
 }
 
 .header-title-link {
+    @map fonts headline;
     @map typography alpha;
 }
