@@ -2,12 +2,17 @@
     border-top: 6px solid map(colors, primary, dark);
     border-bottom: 1px solid map(colors, divider);
     background-color: map(colors, primary, color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px 30px;
 }
 
-.header-title-link {
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-wrapper-title-link {
     color: map(colors, primary, text);
 }
