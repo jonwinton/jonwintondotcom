@@ -23,5 +23,6 @@ exclude: [
   "gulp"
 ] # Don't forget that Jekyll automatically
   # excludes files with a dot prefix
+include: ['_pages']
 # Build settings
 markdown: kramdown
