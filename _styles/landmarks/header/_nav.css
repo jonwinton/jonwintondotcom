@@ -8,7 +8,7 @@
 }
 
 .nav-item-link {
-    color: map(colors, primary, text);
+    color: map(colors, text, primary);
     position: relative;
 
 
