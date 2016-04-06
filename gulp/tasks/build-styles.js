@@ -15,21 +15,22 @@ var configVariables = require('./postcss/index.map');
 var pxToRemConfig = require('./postcss/pxtorem');
 
 
+
 // Maps options
 var opts = {
-    basePath: config.css.src,
+    basePath: config.css.src + '/**/*.css',
     maps: configVariables
 };
 
+console.log(opts);
 function buildStyles() {
 
 
     var processors = [
+        precss,
         map(opts),
         autoprefixer({ browsers: ['last 1 version'] }),
-        precss,
-        pxtorem(pxToRemConfig),
-        cssnano
+        pxtorem(pxToRemConfig)
     ];
 
     return gulp.src(config.css.src + '/main.css')
