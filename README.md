@@ -1,3 +1,0 @@
-# JonWintonDotCom
-
-My personal site.
