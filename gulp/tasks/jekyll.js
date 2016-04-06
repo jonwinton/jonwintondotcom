@@ -25,14 +25,14 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', ['jekyll-build', 'styles'], function () {
     browserSync.reload();
 });
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['jekyll-build'], function() {
+gulp.task('browser-sync', ['jekyll-build', 'styles'], function() {
     browserSync({
         server: {
             baseDir: '_site'
@@ -41,4 +41,4 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 });
 
 
-module.exports = gulp.task('jekyll', ['browser-sync', 'styles', 'watch']);
+module.exports = gulp.task('jekyll', ['browser-sync', 'watch']);
