@@ -1,9 +1,12 @@
 @import 'base/reset';
 @import 'base/elements';
 
+/* Landmarks */
 @import 'landmarks/header/header';
 @import 'landmarks/header/nav';
 @import 'landmarks/header/title';
 
+/* Layout */
+@import 'modules/layout/wrapper/wrapper';
 
 @import "syntax-highlighting";
