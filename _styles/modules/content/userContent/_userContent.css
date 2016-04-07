@@ -1,0 +1,17 @@
+.userContent {
+    p + p {
+        margin-top: 20px;
+    }
+
+    strong, b {
+        font-weight: bold;
+    }
+
+    em, i {
+        font-style: italic;
+    }
+
+    hr {
+
+    }
+}

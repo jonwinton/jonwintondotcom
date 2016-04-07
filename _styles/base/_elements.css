@@ -16,6 +16,11 @@ body {
     @map typography zeta;
 }
 
+.bodyFlex {
+    display: flex;
+    flex-direction: column;
+}
+
 
 a {
     text-decoration: none;

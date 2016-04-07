@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 40px;
     text-align: center;
     @map typography milli;
 }

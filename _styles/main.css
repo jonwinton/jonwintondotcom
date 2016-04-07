@@ -12,4 +12,14 @@
 @import 'modules/layout/section/section';
 @import 'modules/layout/wrapper/wrapper';
 
+/* Container */
+@import 'modules/container/center/center';
+@import 'modules/container/intro/intro';
+@import 'modules/container/panel/panel';
+
+/* Content */
+@import 'modules/content/hdg/hdg';
+@import 'modules/content/userContent/userContent';
+
+
 @import "syntax-highlighting";
