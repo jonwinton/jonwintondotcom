@@ -25,6 +25,7 @@
     }
 
     &:hover {
+        color: map(colors, text, secondary);
         &:after {
             width: 100%;
         }
