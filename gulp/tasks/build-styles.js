@@ -13,6 +13,7 @@ var imports = require('postcss-partial-import');
 var mixins = require('postcss-mixins')({
     mixinsDir: path.join(__dirname, 'postcss/mixins')
 });
+var nested = require('postcss-nested');
 
 var configVariables = require('./postcss/index.map');
 var pxToRemConfig = require('./postcss/pxtorem');
@@ -29,6 +30,7 @@ function buildStyles() {
     var processors = [
         imports,
         mixins,
+        nested,
         map(opts),
         autoprefixer({ browsers: ['last 1 version'] }),
         pxtorem(pxToRemConfig)
