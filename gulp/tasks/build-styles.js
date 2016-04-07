@@ -2,14 +2,17 @@
 
 var gulp = require('gulp');
 var config = require('../config');
+var path = require('path');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var precss = require('precss');
 var map = require('postcss-map');
 var pxtorem = require('postcss-pxtorem');
 var cssnano = require('cssnano');
 var del = require('del');
-
+var imports = require('postcss-partial-import');
+var mixins = require('postcss-mixins')({
+    mixinsDir: path.join(__dirname, 'postcss/mixins')
+});
 
 var configVariables = require('./postcss/index.map');
 var pxToRemConfig = require('./postcss/pxtorem');
@@ -24,7 +27,8 @@ var opts = {
 
 function buildStyles() {
     var processors = [
-        precss,
+        imports,
+        mixins,
         map(opts),
         autoprefixer({ browsers: ['last 1 version'] }),
         pxtorem(pxToRemConfig)
