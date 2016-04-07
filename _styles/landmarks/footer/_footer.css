@@ -1,5 +1,17 @@
 .footer {
-    margin-top: 40px;
     text-align: center;
-    @map typography milli;
+    margin: 40px auto 0;
+    display: flex;
+    max-width: 150px;
+    justify-content: center;
+    border-top: 1px solid map(colors, divider);
+    padding: 10px 20px;
+}
+
+.footer-icon {
+    @map typography zeta;
+
+    & + & {
+        margin-left: 12px;
+    }
 }
