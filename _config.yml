@@ -25,6 +25,6 @@ exclude: [
   "css"
 ] # Don't forget that Jekyll automatically
   # excludes files with a dot prefix
-include: ['_pages']
+include: ['_pages', 'assets']
 # Build settings
 markdown: kramdown
