@@ -18,6 +18,7 @@
 @import 'modules/container/panel/panel';
 
 /* Content */
+@import 'modules/content/code/code';
 @import 'modules/content/hdg/hdg';
 @import 'modules/content/heart/heart';
 @import 'modules/content/icon/icon';
