@@ -28,5 +28,10 @@ body {
 
 a {
     text-decoration: none;
-    color: #EF6C00;
+    color: map(colors, text, secondary);
+    transition: 250ms ease all;
+
+    &:hover {
+        color: map(colors, accent);
+    }
 }
