@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var config = require('../config');
 
 function watch() {
-    gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '**/*.html', '_less/**/*.less', 'js/**/*', 'images/*'], ['jekyll-rebuild']);
+    gulp.watch(['index.html', '_layouts/*.html', '_pages/*','_posts/*', '**/*.html', '_less/**/*.less', 'js/**/*', 'images/*'], ['jekyll-rebuild']);
 }
 
 
