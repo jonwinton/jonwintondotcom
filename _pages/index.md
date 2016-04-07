@@ -11,7 +11,11 @@ exclude_from_nav: true
                 <h1 class="hdg hdg_1">Hi, I'm Jon.</h1>
             </div>
             <div class="intro-bd">
-                <p>I build things with code and <3</p>
+                <p>I build things with code and
+                    <span class="heart">
+                        <span class="isVisuallyHidden">love</span>
+                    </span>
+                </p>
             </div>
             <div class="intro-ft">
                 {% include navigation.html %}

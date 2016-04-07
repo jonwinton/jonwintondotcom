@@ -11,6 +11,7 @@ module.exports = {
             primary: '#212121',
             secondary: '#727272'
         },
-        divider: '#B6B6B6'
+        divider: '#B6B6B6',
+        heart: '#E53935'
     }
 };
