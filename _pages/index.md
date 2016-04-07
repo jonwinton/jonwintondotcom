@@ -11,7 +11,11 @@ exclude_from_nav: true
                 <h1 class="hdg hdg_1">Hi, I'm Jon.</h1>
             </div>
             <div class="intro-bd">
-                <p>I build things with code and
+                <p>I build things with
+                    <span class="code">
+                        &lt;code&gt;
+                    </span>
+                    and
                     <span class="heart">
                         <span class="isVisuallyHidden">love</span>
                     </span>
