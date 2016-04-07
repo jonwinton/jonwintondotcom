@@ -1,4 +1,10 @@
 .userContent {
+    @mixin clearfix;
+
+    .hdg {
+        margin-bottom: 20px;
+    }
+
     p + p {
         margin-top: 20px;
     }
@@ -13,5 +19,11 @@
 
     hr {
 
+    }
+
+    .left {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 }
