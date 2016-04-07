@@ -16,6 +16,15 @@ body {
     @map typography zeta;
 }
 
+.bodyFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.isVisuallyHidden {
+    @mixin isVisuallyHidden;
+}
+
 
 a {
     text-decoration: none;
