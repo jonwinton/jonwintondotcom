@@ -28,6 +28,8 @@
 }
 
 .hdg_secondary {
+    @map fonts regular;
+    font-weight: bold;
     color: map(colors, text, secondary);
 }
 
