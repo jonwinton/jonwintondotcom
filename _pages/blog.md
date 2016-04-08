@@ -6,13 +6,18 @@ permalink: /blog/
 
 <div class="section">
     <div class="section-wrap">
-        <ul>
-            {% for post in site.posts %}
-                <li>
-                    <a href="{{ post.url }}">{{ post.title }}</a> | {{ post.categories }}
-                </li>
-            {% endfor %}
-        </ul>
+        <div class="vr">
+            <h2 class="hdg hdg_2">Blog</h2>
+        </div>
+
+        <div class="vr vr_xxl">
+            <section class="panel">
+                {% include blog/featured-post.html %}
+            </section>
+        </div>
+        <section>
+            {% include blog/blog-list.html %}
+        </section>
     </div>
 </div>
 
