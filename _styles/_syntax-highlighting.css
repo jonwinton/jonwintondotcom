@@ -1,5 +1,24 @@
 .highlight  {
-    background: #ffffff;
+    background: #FAFAFA;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid map(colors, divider);
+    position: relative;
+
+    code {
+        &:before {
+            content: attr(data-lang);
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: map(colors, divider);
+            color: #FFFFFF;
+            padding: 5px 10px;
+            @map fonts headline;
+            @map typography milli;
+            text-transform: uppercase;
+        }
+    }
 
     pre {
         white-space: pre-wrap;
