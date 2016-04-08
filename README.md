@@ -1,6 +1,6 @@
 # JonWintonDotCom
 
-[![Build Status](https://travis-ci.org/jonwinton/jonwintondotcom.svg?branch=develop)](https://travis-ci.org/jonwinton/jonwintondotcom)
+[![Build Status](https://travis-ci.org/jonwinton/jonwintondotcom.svg?branch=master)](https://travis-ci.org/jonwinton/jonwintondotcom)
 
 A personal website.
 
