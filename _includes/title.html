@@ -1,0 +1,5 @@
+{% if page.is_post %}
+<title>{% if page.title %}{{ page.title | escape }}- {{ site.title | escape}} Blog{% endif %}</title>
+{% else %}
+<title>{{ site.title | escape}}{% if page.title %} | {{ page.title | escape }}{% endif %}</title>
+{% endif %}
