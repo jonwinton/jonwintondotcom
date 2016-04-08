@@ -11,7 +11,7 @@ permalink: /blog/
         </div>
 
         <div class="vr vr_xxl">
-            <section class="panel">
+            <section class="panel panel_push">
                 {% include blog/featured-post.html %}
             </section>
         </div>
