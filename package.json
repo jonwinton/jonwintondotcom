@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jonwinton/jonwintondotcom",
   "devDependencies": {
     "autoprefixer": "6.3.6",
+    "bluebird": "3.3.4",
     "browser-sync": "2.11.2",
     "cssnano": "3.5.2",
     "del": "2.2.0",
