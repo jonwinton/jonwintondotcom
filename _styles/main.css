@@ -22,6 +22,7 @@
 @import 'modules/container/postList/postList';
 
 /* Content */
+@import 'modules/content/btn/btn';
 @import 'modules/content/code/code';
 @import 'modules/content/hdg/hdg';
 @import 'modules/content/heart/heart';
