@@ -1,11 +1,16 @@
 language: ruby
 rvm:
   - 2.1
+
+node_js:
+  - "4"
+
 install:
   - gem install jekyll html-proofer
-  # - npm i -D
-# before_script:
-#   - npm install -g gulp
+  - npm i -D
+before_script:
+  - npm install -g gulp
+
 script:
   - jekyll build
 branches:
