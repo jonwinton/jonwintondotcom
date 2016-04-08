@@ -6,7 +6,7 @@ permalink: /blog/
 
 <div class="section">
     <div class="section-wrap">
-        <div class="vr">
+        <div class="vr vr_md">
             <h2 class="hdg hdg_2">Blog</h2>
         </div>
 
