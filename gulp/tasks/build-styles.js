@@ -10,6 +10,7 @@ var pxtorem = require('postcss-pxtorem');
 var cssnano = require('cssnano');
 var del = require('del');
 var imports = require('postcss-partial-import');
+var colorAlpha = require('postcss-color-alpha');
 var mixins = require('postcss-mixins')({
     mixinsDir: path.join(__dirname, 'postcss/mixins')
 });
@@ -32,6 +33,7 @@ function buildStyles() {
         mixins,
         nested,
         map(opts),
+        colorAlpha,
         autoprefixer({ browsers: ['last 1 version'] }),
         pxtorem(pxToRemConfig)
     ];
