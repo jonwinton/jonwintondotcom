@@ -1,5 +1,7 @@
 'use strict';
 
+require('es6-promise').polyfill(); // Travis-CI build fix for this issue: https://github.com/postcss/postcss-nested/issues/30
+
 var gulp = require('gulp');
 var config = require('../config');
 var path = require('path');
