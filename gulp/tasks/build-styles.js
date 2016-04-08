@@ -15,7 +15,7 @@ var mixins = require('postcss-mixins')({
 });
 var nested = require('postcss-nested');
 
-var configVariables = require('./postcss/index.map');
+var configVariables = require('./postcss/vars/index.map');
 var pxToRemConfig = require('./postcss/pxtorem');
 
 
