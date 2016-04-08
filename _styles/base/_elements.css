@@ -32,6 +32,6 @@ a {
     transition: 250ms ease all;
 
     &:hover {
-        color: map(colors, accent);
+        color: map(colors, primary,dark);
     }
 }

@@ -17,7 +17,7 @@
         display: block;
         height: 2px;
         width: 0;
-        background-color: map(colors, accent);
+        background-color: map(colors, primary, dark);
         position: absolute;
         bottom: -5px;
         right: 0;

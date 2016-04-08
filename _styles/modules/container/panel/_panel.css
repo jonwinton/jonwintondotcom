@@ -3,3 +3,7 @@
     padding: 10px;
     box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.5)
 }
+
+.panel_push {
+    padding: 20px;
+}

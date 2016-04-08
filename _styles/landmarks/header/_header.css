@@ -1,7 +1,7 @@
 .header {
     background-color: rgba(255,255,255, 1);
     padding: 5px 30px;
-    border-bottom: 1px solid map(colors, accent);
+    border-bottom: 1px solid map(colors, primary, dark);
 }
 
 .header-wrapper {
