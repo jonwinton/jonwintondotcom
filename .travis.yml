@@ -6,7 +6,9 @@ before_install:
 install: gem install jekyll html-proofer
 before_script:
   - npm install -g gulp
-script: jekyll build; gulp styles;
+script:
+  - jekyll build
+  - gulp styles
 branches:
   only:
     - master
