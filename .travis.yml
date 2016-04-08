@@ -2,9 +2,11 @@ language: ruby
 rvm:
   - 2.1
 before_install:
-  - npm i
+  - npm i -D
 install: gem install jekyll html-proofer
-script: jekyll build && gulp styles
+before_script:
+  - npm install -g gulp
+script: jekyll build; gulp styles;
 branches:
   only:
     - master
