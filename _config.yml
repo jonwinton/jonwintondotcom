@@ -17,6 +17,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: Jon_Winton
 github_username:  jonwinton
+instagram_username: jon_winton
+linkedin_username: jonwinton
 exclude: [
   "gulpfile.js",
   "node_modules",
