@@ -1,0 +1,22 @@
+.featuredPost {
+    display: flex;
+}
+
+.featuredPost-img {
+    margin-right: 20px;
+    order: 1;
+}
+
+.featuredPost-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 2;
+}
+
+.featuredPost-desc-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+

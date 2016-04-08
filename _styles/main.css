@@ -10,12 +10,16 @@
 
 /* Layout */
 @import 'modules/layout/section/section';
+@import 'modules/layout/vr/vr';
 @import 'modules/layout/wrapper/wrapper';
 
 /* Container */
 @import 'modules/container/center/center';
+@import 'modules/container/featuredPost/featuredPost';
 @import 'modules/container/intro/intro';
 @import 'modules/container/panel/panel';
+@import 'modules/container/post/post';
+@import 'modules/container/postList/postList';
 
 /* Content */
 @import 'modules/content/code/code';

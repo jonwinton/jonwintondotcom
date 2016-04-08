@@ -26,3 +26,11 @@
 .hdg_7 {
     @map typography epsilon;
 }
+
+.hdg_secondary {
+    color: map(colors, text, secondary);
+}
+
+.hdg_normal {
+    font-weight: normal;
+}
