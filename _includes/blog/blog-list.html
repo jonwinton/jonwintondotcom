@@ -12,6 +12,17 @@
                     <span>{{post.date | date: "%Y-%m-%d"}}</span>
                 </div>
             </article>
+
+            {% if post.categories %}
+              {% for category in post.categories %}
+                {% assign no_comma = forloop.last %}
+                {% for archive in site.archives %}
+                  {% if archive.type == "category" and archive.title == category %}
+                    <a href="{{ archive.url }}">{{ archive.title }}</a>{% unless no_comma %},{% endunless %}
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+            {% endif %}
         </li>
         {% endunless %}
     {% endfor %}
