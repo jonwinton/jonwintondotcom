@@ -1,26 +1,22 @@
 .userContent {
     @mixin clearfix;
-
     .hdg {
         margin-bottom: 20px;
     }
-
     p {
         line-height: 1.8;
     }
-
     p + p {
         margin-top: 20px;
     }
-
-    strong, b {
+    strong,
+    b {
         font-weight: bold;
     }
-
-    em, i {
+    em,
+    i {
         font-style: italic;
     }
-
     hr {
         border: none;
         display: flex;
@@ -35,15 +31,21 @@
         }
     }
 
-    .left {
-        float: left;
-        margin-right: 10px;
-        margin-bottom: 10px;
+    img {
+        display: block;
+        margin: 10px auto;
     }
-
-    .right {
-        float: right;
-        margin-left: 10px;
-        margin-bottom: 10px;
+    
+    @media (min-width: map(queries, tablet)) {
+        .left {
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .right {
+            float: right;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
     }
 }

@@ -1,6 +1,6 @@
 module.exports = {
     queries: {
-        tablet: '768px',
+        tablet: '600px',
         desktop: '1024px'
     }
 };

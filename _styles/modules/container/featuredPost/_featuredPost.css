@@ -1,5 +1,6 @@
 .featuredPost {
     display: flex;
+    flex-direction: column;
 }
 
 .featuredPost-img {
@@ -18,9 +19,13 @@
     margin-top: 20px;
 }
 
-.featuredPost-desc-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+@media (min-width: map(queries, tablet)) {
+    .featuredPost {
+        flex-direction: row;
+    }
+    .featuredPost-desc-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
 }
-
