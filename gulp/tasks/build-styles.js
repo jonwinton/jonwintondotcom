@@ -16,6 +16,7 @@ var colorAlpha = require('postcss-color-alpha');
 var mixins = require('postcss-mixins')({
     mixinsDir: path.join(__dirname, 'postcss/mixins')
 });
+var mqPacker = require('css-mqpacker');
 var nested = require('postcss-nested');
 
 var configVariables = require('./postcss/vars/index.map');
@@ -37,6 +38,7 @@ function buildStyles() {
         map(opts),
         colorAlpha,
         autoprefixer({ browsers: ['last 1 version'] }),
+        mqPacker,
         pxtorem(pxToRemConfig)
     ];
 

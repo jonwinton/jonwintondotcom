@@ -20,6 +20,7 @@
     "autoprefixer": "6.3.6",
     "bluebird": "3.3.4",
     "browser-sync": "2.11.2",
+    "css-mqpacker": "^4.0.1",
     "cssnano": "3.5.2",
     "del": "2.2.0",
     "es6-promise": "3.1.2",
