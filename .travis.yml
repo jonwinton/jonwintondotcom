@@ -7,6 +7,7 @@ node_js:
 
 install:
   - gem install jekyll html-proofer
+  - bundle
   - npm i -D
 before_script:
   - npm install -g gulp
