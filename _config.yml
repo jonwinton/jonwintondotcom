@@ -19,17 +19,17 @@ twitter_username: Jon_Winton
 github_username:  jonwinton
 instagram_username: jon_winton
 linkedin_username: jonwinton
+include: ['_pages', 'assets/fonts', 'assets/images']
 exclude: [
   "gulpfile.js",
   "node_modules",
   "package.json",
   "gulp",
-  "css",
   "Gemfile",
-  "Gemfile.lock"
+  "Gemfile.lock",
+  "assets/styles"
 ] # Don't forget that Jekyll automatically
   # excludes files with a dot prefix
-include: ['_pages', 'assets']
 # Build settings
 markdown: kramdown
 gems:
