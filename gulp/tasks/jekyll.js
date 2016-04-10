@@ -35,7 +35,7 @@ gulp.task('jekyll-rebuild', function (cb) {
 
     return runSequence(
         ['jekyll-build'],
-        ['styles'],
+        ['styles', 'scripts'],
         ['refresh'],
         cb
     );

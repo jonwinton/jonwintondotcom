@@ -4,6 +4,7 @@ var gulp = require('gulp');
 var config = require('../config');
 
 function watch() {
+    gulp.watch(config.js.src + '/**/*.js', ['scripts']);
     gulp.watch(config.css.src + '/**/*.css', ['styles']);
 }
 
