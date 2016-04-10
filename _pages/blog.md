@@ -16,7 +16,7 @@ permalink: /blog/
             </section>
         </div>
         <section>
-            {% include blog/blog-list.html %}
+            {% include blog/blog-list.html posts=site.posts show_category=true %}
         </section>
     </div>
 </div>

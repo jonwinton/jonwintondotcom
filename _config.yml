@@ -24,9 +24,22 @@ exclude: [
   "node_modules",
   "package.json",
   "gulp",
-  "css"
+  "css",
+  "Gemfile",
+  "Gemfile.lock"
 ] # Don't forget that Jekyll automatically
   # excludes files with a dot prefix
 include: ['_pages', 'assets']
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-archives
+jekyll-archives:
+  enabled: all
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
