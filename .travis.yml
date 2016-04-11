@@ -20,7 +20,7 @@ branches:
     - deploy
     - develop
 
-after_deploy:
+deploy:
   - bash ./deploy.sh
 
 sudo: false
