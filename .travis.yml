@@ -18,10 +18,10 @@ script:
 
 branches:
   only:
-    - master
+    - deploy
     - develop
 
 after_deploy:
-  - gulp styles
+  - bash deploy.sh
 
 sudo: false
