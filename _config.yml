@@ -19,6 +19,7 @@ twitter_username: Jon_Winton
 github_username:  jonwinton
 instagram_username: jon_winton
 linkedin_username: jonwinton
+medium_username: Jon_Winton
 include: ['_pages', 'assets/fonts', 'assets/images']
 exclude: [
   "gulpfile.js",
