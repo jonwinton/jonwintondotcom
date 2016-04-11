@@ -19,6 +19,7 @@ branches:
   only:
     - deploy
     - develop
+    - master
 
 deploy:
   skip_cleanup: true
