@@ -21,6 +21,10 @@ branches:
     - develop
 
 deploy:
-  - bash ./deploy.sh
+  skip_cleanup: true
+  provider: script
+  script: ./deploy.sh
+  on:
+    branch: deploy
 
 sudo: false
