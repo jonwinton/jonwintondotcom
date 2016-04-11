@@ -22,9 +22,7 @@ branches:
 
 deploy:
   skip_cleanup: true
-  provider: script
-  script: ./deploy.sh
   on:
-    branch: deploy
+    branch: master
 
 sudo: false
