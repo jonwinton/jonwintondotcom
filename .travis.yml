@@ -21,7 +21,7 @@ branches:
     - master
     - develop
 
-deploy:
+after_deploy:
   - gulp styles
 
 sudo: false
