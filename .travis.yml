@@ -9,7 +9,6 @@ install:
   - gem install jekyll html-proofer
   - bundle
   - npm i
-before_script:
   - npm install -g gulp
 
 script:
@@ -22,6 +21,6 @@ branches:
     - develop
 
 after_deploy:
-  - bash deploy.sh
+  - bash ./deploy.sh
 
 sudo: false
