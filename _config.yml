@@ -29,7 +29,8 @@ exclude: [
   "Gemfile",
   "Gemfile.lock",
   "assets/styles",
-  "assets/scripts"
+  "assets/scripts",
+  "deploy.sh"
 ] # Don't forget that Jekyll automatically
   # excludes files with a dot prefix
 # Build settings
