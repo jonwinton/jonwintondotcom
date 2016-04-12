@@ -19,13 +19,12 @@ branches:
   only:
     - deploy
     - develop
-    - master
 
 deploy:
   skip_cleanup: true
   provider: script
   script: ./deploy.sh
   on:
-    branch: master
+    branch: deploy
 
 sudo: false
